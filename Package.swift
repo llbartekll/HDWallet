@@ -21,8 +21,7 @@ let package = Package(
         .target(
             name: "HDWallet",
             dependencies: ["CryptoSwift",
-                           .product(name: "secp256k1", package: "secp256k1")],
-            sources: ["."]),
+                           .product(name: "secp256k1", package: "secp256k1")]),
         .testTarget(
             name: "HDWalletTests",
             dependencies: ["HDWallet"]),
