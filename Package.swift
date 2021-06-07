@@ -20,7 +20,7 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "HDWallet",
-            dependencies: ["CryptoSwift", "secp256k1"],
+            dependencies: ["CryptoSwift", "secp256k1.swift"],
             path: "HDWalletKit",
             sources: ["."]),
         .testTarget(
